@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo bảng</title>
+    <style>
+        h1{
+            color: orange;
+            text-align: center;
+        }
+        .main{
+            position: relative; 
+            left: 50%;
+            transform: translateX(-50%);
+            width: 110vh;
+        }
+        .left,.right{
+            float: left;
+            margin: 10px;
+        }
+        img{
+            height: 200px;
+        }
+        table, tr, td{
+            border: 1px solid #962783;
+            border-collapse: collapse;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        table{
+            height: 200px;
+        }
+        table tr:nth-child(1){
+            background-color: #CC6600;
+            color: white;
+            text-align: center;
+            font-weight: 600;
+        }
+        table tr:nth-child(3),table tr:nth-child(5){
+            background-color: #FFEDCA;
+        }
+        table tr td:nth-child(1){
+            text-align: center;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Các món ngon Hà Nội</h1>
+    <div class="main">
+        <div class="left">
+            <img src="https://hoanghaigroup.com/wp-content/uploads/2020/07/Mon-ngon-ha-noi.jpg" alt="">
+        </div>
+        <div class="right">
+            <table>
+                <tr>
+                    <td>STT</td>
+                    <td>Tên món ăn</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Bánh cuốn Thanh Tri</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Xôi Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Bánh cuốn Thanh Tri</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Xôi Hà Nội</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

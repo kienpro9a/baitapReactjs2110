@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo bảng</title>
+    <style>
+        .main {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120vh;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid #800080;
+            border-collapse: collapse;
+            font-family:serif
+        }
+
+        table {
+            width: 120vh;
+        }
+
+        table tr:nth-child(1) td:nth-child(1){
+            background-color: #FF0000;
+            color: #fff;
+            text-align: right;
+            font-weight: 600;
+            font-size: 18px;
+            padding-right: 5px;
+        }
+
+        table tr:nth-child(3) td:nth-child(1){
+            background-color: #FFBBBB;
+            color: #ff0000;
+            text-align: center;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        table tr:nth-child(1) td:nth-child(2){
+            width: 80px;
+            padding: 5px;
+        }
+
+        table tr:nth-child(4) td:nth-child(1){
+            width: 60vh;
+        }
+
+        table tr:nth-child(4) td:nth-child(2){
+            width: 60vh;
+        }
+
+        ol{
+            padding: 1px;
+            margin: 1px;
+        }
+
+        ol>li{
+            list-style: none;
+            color: red;
+            font-weight: 600;
+        }
+        .left ul{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .left ul>li{
+            list-style:disc;
+        }
+        .right ul>li{
+            padding-top: 15px;
+            list-style:decimal;
+        }
+        span{
+            font-style: italic;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <table>
+            <tr>
+                <td colspan="3">Công nghệ dầu gội dưỡng tóc mới</td>
+                <td rowspan="3"><img src="https://img4.thuthuatphanmem.vn/uploads/2020/06/22/ba-bong-hoa-hong-trung-tren-mot-canh_090941406.jpg" width="80"></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Tỏa sáng cùng DOUBLE RICH</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="left">
+                    <ol>
+                        <li><ion-icon name="hand-right-outline"></ion-icon>
+                            Sản phẩm khuyến mãi</li>
+                        <ul>
+                            <li>Dầu gội Double Rich mới 200ml, 400ml có tem khuyến mãi</li>
+                        </ul>
+                        <li><ion-icon name="hand-right-outline"></ion-icon>
+                            Đối tượng tham gia</li>
+                        <ul>
+                            <li>Áp dụng cho tất cả người tiêu dùng cuối cùng mua sản phẩm khuyến mãi</li>
+                            <li>Chương trình không áp dụng cho nhân viên, nhà phân phối bào gồm các tổng
+                                đại lý, đại lý, cửa hàng bán sỉ,lẻ và các vá nhân kinh doanh sản phẩm của
+                                công ty LDMP LG Vina, công ty quảng cáo, công ty làm dịch vụ chương trình
+                                khuyến mãi này, nhân viên siêu thị</li>
+                        </ul>
+                    </ol>   
+                </td>
+                <td colspan="2" class="right">
+                    <ol>
+                        <li><ion-icon name="hand-right-outline"></ion-icon>
+                            Cách thức nhận giải</li>
+                        <ul>
+                            <li><span>Giải khuyến khích: </span>Khách hàng đổi quà tại các cửa hàng bán lẻ
+                                trên toàn quốc. Bắt đầu từ ngày 15/06/2005 đến 17h ngày 12/08/2005</li>
+                            <li><span>Giải đặc biệt, nhất, nhì: </span>khách hàng cắt phần mã vạch trên mỗi
+                                chai dầu gội có khuyến mãi và gởi kèm phiếu trúng thưởng về văn phòng công
+                                ty, hạn chót đến hết ngày 31/07/2005 (căn cứ theo dấu bưu điện nơi gởi).
+                                Sau đó công ty sẽ gởi thư thông báo trúng thưởng và cách thức nhận quà cho khách hàng</li>
+                        </ul>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

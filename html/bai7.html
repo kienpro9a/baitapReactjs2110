@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ký tự đặc biệt, chèn hình ảnh, tag</title>
+    <style>
+        h1{
+            color: red;
+            text-align: center;
+        }
+        .main{
+            height: 50vh;
+            position: relative;
+            padding-left:60vh;
+        }
+        .left{
+            height: 50vh;
+            width: 40vh;
+            float: left;
+        }
+        .right{
+            left: 40vh;
+            height: 50vh;
+            float: left;
+        }
+        span{
+            background-color:red;
+            color: white;
+        }
+        b{
+            padding-left: 24px;
+        }
+        ul.a{
+            list-style-type: square;;
+        }
+        a[href*='http://www.csc.hcmuns.edu.vn']{
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h1>Công ty Hoa tươi Nhân ái</h1>
+    <div class="main">
+        <div class="left"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzhXztFxZulxxG9v2E_vbpZyaRDYyG57-hSc7hPEGKBthMuYua7A" alt="" height="300"></div>
+        <div class="right">
+            <ol>
+                <li><span>Giới thiệu</span></li>
+                <ul class="a">
+                    <li>Thành lập ngày 25/05/2017</li>
+                    <li>Chuyên cung cấp các loại hoa tươi</li>
+                    <li>Có trên 20 cửa hàng bán lẻ tại TP.HCM</li>
+                    <li>Nhận kết giỏ hoa theo yêu cầu của khách hàng</li>
+                </ul>
+                <li><span>Liên hệ</span></li>
+                <ul>
+                    <li>Điện thoại: 84-08-8351056</li>
+                    <li>Địa chỉ: 227 Nguyễn Văn Cừ, TP.HCM</li>
+                </ul>
+            </ol>
+            <b>© Copyright: </b><a href="http://www.csc.hcmuns.edu.vn" target='_blank'>Trung Tâm Tin Học</a>
+        </div>
+    </div>
+    
+</body>
+</html>
