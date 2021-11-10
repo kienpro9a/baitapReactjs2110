@@ -11,7 +11,7 @@
             position: relative;
             left: 50%;
             transform: translateX(-50%);
-            width: 120vh;
+            width: 650px;
         }
 
         table,
@@ -23,10 +23,10 @@
         }
 
         table {
-            width: 120vh;
+            width: 650px;
         }
 
-        table tr:nth-child(1) td:nth-child(1){
+        table tr:nth-child(1) td:first-child{
             background-color: #FF0000;
             color: #fff;
             text-align: right;
@@ -35,7 +35,11 @@
             padding-right: 5px;
         }
 
-        table tr:nth-child(3) td:nth-child(1){
+        table tr:nth-child(2) td:first-child{
+            height: 15px;
+        }
+
+        table tr:nth-child(3) td:first-child{
             background-color: #FFBBBB;
             color: #ff0000;
             text-align: center;
@@ -49,11 +53,7 @@
         }
 
         table tr:nth-child(4) td:nth-child(1){
-            width: 60vh;
-        }
-
-        table tr:nth-child(4) td:nth-child(2){
-            width: 60vh;
+            width: 50%;
         }
 
         ol{

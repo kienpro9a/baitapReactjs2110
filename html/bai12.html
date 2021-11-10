@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form và các điều khiển</title>
+    <style>
+        .main {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80vh;
+            color: #008004;
+        }
+
+        h1{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            font-family:serif;
+            background-color: #90ee90;
+            font-size: 18px;
+        }
+
+        tr:nth-child(1) td:nth-child(1){
+            width: 40vh;
+        }
+
+        tr:nth-child(1) td:nth-child(2){
+            width: 40vh;
+        }
+
+        tr:nth-child(1) input{
+            width: 220px;
+        }
+
+        tr:nth-child(2) input{
+            width: 190px;
+        }
+
+        tr:nth-child(3) input{
+            width: 140px;
+        }
+
+        tr:nth-child(8) td{
+            text-align: center;
+        }
+
+        tr:nth-child(9) td{
+            text-align: center;
+            color: #ff0000;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Họ và tên</td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Phone number</td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Phái</td>
+                    <td>
+                        <input type="radio" id="nam" name="phai">
+                        <label for="nam">Nam</label>
+                        <input type="radio" id="nu" name="phai">
+                        <label for="nu">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nghề nghiệp</td>
+                    <td>
+                        <select id="" name="">
+                            <option value="">Giáo viên</option>
+                            <option value="">Kỹ sư</option>
+                            <option value="">Bác sĩ</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chọn sản phẩm tham gia</td>
+                    <td>
+                        <select id="" name="" size="4" multiple>
+                            <option value="">Kem đánh răng</option>
+                            <option value="">Bột giặt</option>
+                            <option value="">Dầu gội đầu</option>
+                            <option value="">Sữa tắm</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Số người dự đoán tham gia</td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Đăng nhập">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Bạn đã đăng ký thành công!!!</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

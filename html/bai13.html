@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form và điều khiển</title>
+    <style>
+        .main {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 500px;
+            color: #008004;
+        }
+
+        h1{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        table{
+            width: 500px;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            font-family:serif;
+            background-color: #90ee90;
+            font-size: 20px;
+        }
+
+        tr:nth-child(1) td:nth-child(1){
+            width: 30%;
+        }
+
+        tr:nth-child(1) input{
+            width: 310px;
+        }
+
+        tr:nth-child(2) input{
+            width: 250px;
+        }
+
+        tr:nth-child(3) input{
+            width: 180px;
+        }
+
+        fieldset{
+            margin:auto;
+            width: 300px;
+            text-align: center;
+        }
+
+        fieldset legend{
+            text-align: left;
+        }
+
+        fieldset input{
+            width: 30px;
+        }
+
+        tr:nth-child(8) select{
+            width: 200px;
+        }
+
+        tr:nth-child(9){
+            text-align: center;
+        }
+
+        tr:last-child td{
+            text-align: center;
+            color: #ff0000;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Đăng ký du lịch</h1>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Họ và tên</td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Phone number</td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Khách Việt Nam</td>
+                    <td><input type="checkbox" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Chọn tour</td>
+                    <td>
+                        <select id="" name="">
+                            <optgroup label="Miền Bắc">
+                                <option value="">Nha Trang - Đà Lạt</option>
+                                <option value="">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phương tiện</td>
+                    <td>
+                        <input type="radio" id="plane" name="transport">
+                        <label for="plane">Máy bay</label>
+                        <input type="radio" id="car" name="transport">
+                        <label for="car">Ô tô</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <fieldset>
+                            <legend>Chọn sản phẩm tham gia</legend>
+                            <label for="fname">Người lớn</label>
+                            <input type="text" id="fname" name="fname">
+                            <label for="lname">Trẻ em</label>
+                            <input type="text" id="lname" name="lname">
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ghi chú thêm</td>
+                    <td>
+                        <select id="" name="" size="2" multiple>
+                            <option value="">Có 2 trẻ em dưới 6 tuổi</option>
+                            <option value="">Có 2 người ăn chay</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Đăng nhập">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Bạn đã đăng ký thành công!!!</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
