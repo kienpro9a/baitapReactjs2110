@@ -1,0 +1,1 @@
+let text = `computer =            " ngan 98    " AND class = "  REACTJS2002 AND \= " OR name = “hieu”`
